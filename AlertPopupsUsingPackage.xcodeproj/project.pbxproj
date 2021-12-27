@@ -14,6 +14,7 @@
 		B4BF3D8E277A024F003285E6 /* AlertPopupsUsingPackageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF3D8D277A024F003285E6 /* AlertPopupsUsingPackageTests.swift */; };
 		B4BF3D98277A024F003285E6 /* AlertPopupsUsingPackageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF3D97277A024F003285E6 /* AlertPopupsUsingPackageUITests.swift */; };
 		B4BF3D9A277A024F003285E6 /* AlertPopupsUsingPackageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF3D99277A024F003285E6 /* AlertPopupsUsingPackageUITestsLaunchTests.swift */; };
+		B4BF3DA8277A04AE003285E6 /* AlertPopUp-iOS13 in Frameworks */ = {isa = PBXBuildFile; productRef = B4BF3DA7277A04AE003285E6 /* AlertPopUp-iOS13 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BF3DA8277A04AE003285E6 /* AlertPopUp-iOS13 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = AlertPopupsUsingPackage;
+			packageProductDependencies = (
+				B4BF3DA7277A04AE003285E6 /* AlertPopUp-iOS13 */,
+			);
 			productName = AlertPopupsUsingPackage;
 			productReference = B4BF3D79277A024D003285E6 /* AlertPopupsUsingPackage.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = B4BF3D70277A024C003285E6;
+			packageReferences = (
+				B4BF3DA6277A04AE003285E6 /* XCRemoteSwiftPackageReference "AlertPopUp-iOS13" */,
+			);
 			productRefGroup = B4BF3D7A277A024D003285E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -605,6 +613,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4BF3DA6277A04AE003285E6 /* XCRemoteSwiftPackageReference "AlertPopUp-iOS13" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmarttila/AlertPopUp-iOS13";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4BF3DA7277A04AE003285E6 /* AlertPopUp-iOS13 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4BF3DA6277A04AE003285E6 /* XCRemoteSwiftPackageReference "AlertPopUp-iOS13" */;
+			productName = "AlertPopUp-iOS13";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4BF3D71277A024D003285E6 /* Project object */;
 }
